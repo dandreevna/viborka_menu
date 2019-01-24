@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Выборка меню</title>
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<link href="/css/jqUI/jquery-ui.min.css" rel="stylesheet">
+		<link href="/css/style.css" type="text/css" rel="stylesheet">
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/jquery-ui.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				
+				$('#menu').click(function(){
+					if ($('#dashboard').css('left')=='-200px'){
+						$('#dashboard').stop().animate(
+							{
+								left: '0'
+							},
+							500,
+							'easeInSine'
+						); // end animate
+					}else{
+						$('#dashboard').stop().animate(
+							{
+								left: '-200px'
+							},
+							500,
+							'easeInSine'
+						); // end animate
+					}	
+				});//end click
+
+			}); // end ready
+		</script>
+	</head>
+	<body>	
+		<div class="main_wrapper">
+
+			<header>
+				<div class="logo">
+					<div id="menu"><img src="/img/nav.png"/></div>
+				</div>
+				
+				<div id="dashboard">
+		            <a href="/index.php">Выбор блюд</a>
+						<a href="/food/">Состав блюд</a>
+		        	<a href="/info/">Информация</a>
+		            <a href="/vhod/">Вход для администратора</a>     
+				</div>
+			</header>
+<!--******************************************************************-->

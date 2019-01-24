@@ -1,0 +1,383 @@
+﻿/*------------------------------------CSS-СБРОС-------------------------------------*/
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    *{
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box;
+    }
+
+/*-------------------------------------общее----------------------------------------*/
+
+    *{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 19px;
+    }
+
+    .main_wrapper {
+        max-width: 100%;
+        margin: 0px auto;
+        background: #fff;
+        background: #F1F0EE;
+    }
+
+    main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .zastavka_ajax {
+        position: absolute;
+        left: 40%;
+        opacity: 0.7;
+        display: none;
+        z-index: 200;
+    }
+
+    .zastavka_ajax .wrap_img {
+        width: 80%;
+    }
+
+    .zastavka_ajax img{
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 200%; 
+        color: #515151;
+        padding-left: 28px;
+    }
+
+    h2 {
+        font-size: 150%; 
+        color: #515151;
+    }
+
+/*--------------------------------------info----------------------------------------*/
+
+    p.info {
+        font-size: 21px;
+        color: #332E2E;
+        margin: 0 2%;
+        padding: 0 2% 2% 2%;
+        margin-top: 4%;
+        text-align: justify;
+        line-height: 1.2;
+    }
+
+    img.info {
+        float: right; 
+        width: 50%;
+        margin: 0 0 2% 2%;
+        border: 1px solid #ccc;
+    }
+
+/* ------------------------------------header ------------------------------------- */
+
+    #dashboard {
+        width: 200px;
+        background: #4D4842;
+        padding: 15px;
+        position: absolute;
+        left: -200px;
+        z-index: 100;
+        height: 100%;
+        opacity: 0.9;
+    }
+
+    #menu{
+        cursor: pointer;
+        opacity: 0.6;
+        padding: 17px 7px;
+    }
+
+    #menu:hover{
+        opacity: 0.8;
+    }
+
+    #dashboard a{
+        display: inline-block;
+        margin: 12px 10px;
+        text-decoration: none;
+        font-size: 23px;
+        color: #FFF;
+    }
+
+    #dashboard a:hover{
+        color: #FF5C60;
+    }
+
+    .logo{
+        width: 100%;
+        background-image: url("/img/logo.png");
+        height: 100px;
+    }
+
+/*--------------------------------------main----------------------------------------*/
+    
+    .vkl, 
+    .iskl,
+    .nz,
+    .choice_category {
+        display: none;
+    }
+
+    .btn,
+    .btn_new{
+        cursor: pointer; 
+        margin: 10px;
+        width: 220px; 
+        text-align: center;
+    }
+
+    .ui-state-default.btn{
+        background: #FBC228 !important;
+    }
+
+    .btn_new{
+        width: 80px;
+    }
+
+    #tabContainer{
+        width: 650px;
+    }
+
+    #rez_modal{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 19px;
+        width: 350px;
+        padding: 0;
+        line-height: 1.2;
+
+    }
+
+    #panel1, #panel2{
+        padding: 15px;
+    }
+
+    .list_category, .list_products{
+        overflow-y: scroll;
+        height: 330px;
+        width: 623px;
+        border: 1px solid #ccc;
+        background: #fff;
+        margin: 0;
+    }
+
+    .block_res{
+        width: 286px;
+        overflow-y: scroll;
+        height: 330px;
+        background: #fff;
+        margin: 0;
+        padding: 10px;
+
+    }
+
+    main.main_page .item_product, main.main_page .item_category{
+        position: relative;
+        display: inline-block;
+        width: 600px;  
+        margin: 17px 0;  
+    }
+
+    main.main_page .name_product, main.main_page .name_category{
+        position: absolute;
+        top: 0px; 
+        left: 200px;
+        cursor: pointer;  
+        width: 200px; 
+        padding: 7px 0; 
+        margin: 0;
+        text-align:center;  
+        background: #ccc;  
+        border-radius: 3px;
+    }
+
+    .name_product:first-letter, .name_category:first-letter{
+        text-transform: uppercase;
+    }
+
+    main.main_page .name_category{
+        width: 200px;
+        left: 200px;
+    }
+
+/*--------------------------------------food----------------------------------------*/
+
+    .list_food{
+        overflow-y: scroll;
+        height: 330px;
+        width: 620px;
+        border: 1px solid #ccc;
+        background: #fff;
+        margin: 0;
+    }
+
+    main.main_page .item_food{
+        position: relative;
+        display: inline-block;
+        width: 599px;  
+        margin: 17px 0; 
+
+    }
+
+    main.main_page .name_food{
+        position: absolute;
+        top: 0px; 
+        width: 300px;
+        left: 150px;
+        cursor: pointer;   
+        padding: 7px 0; 
+        margin: 0;
+        text-align:center;  
+        background: #ccc;  
+        border-radius: 3px;
+    }
+
+    .name_food:first-letter{
+        text-transform: uppercase;
+    }
+
+    main.main_page .choice_food{
+        display: none;
+    }
+
+    #rez_modal{
+        width: 650px;
+        padding: 0;
+    }
+
+    .btn_food{
+        cursor: pointer; 
+        margin: 10px 38px;
+        width: 220px; 
+        text-align: center;
+    }
+
+    .ui-state-default.btn_food{
+        background: #FBC228 !important;
+    }
+
+/*--------------------------------------admin---------------------------------------*/
+
+    p.vhod{
+        color: #333;
+    }
+
+    td{
+        padding: 9px;
+    }
+
+    h2{
+        font-size: 22px;
+        color: #333;
+        margin: 10px 0;
+    }
+
+    .btn_admin{
+        margin-top: 20px;
+    }
+
+    .list_admin{
+        overflow-y: scroll;
+        height: 330px;
+        width: 320px;
+        border: 1px solid #ccc;
+        background: #fff;
+        margin: 0;
+    }
+
+    .list_products_forFood, .list_category_forFood{
+        width: 280px;
+    }
+
+    #food_float{
+        float: left;
+        margin-right: 15px;
+    }
+
+    #prod_vib{
+        margin-top: 0;
+    }
+
+/*-------------------------------------footer-------------------------------------- */
+
+    footer {
+        border-top: 1px solid #ccc;
+    }
+
+    footer .copyright {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+/*------------------------------------Адаптивность----------------------------------*/
+    @media (min-width: 1200px){
+
+        #dashboard {
+            width: 100%;
+            position: static;
+            text-align: center;
+        }
+
+        #menu{
+            display: none;
+        }
+
+        #dashboard a{
+            display: inline;
+            font-size: 21px;
+        }
+
+        .main_wrapper {
+            max-width: 700px;
+        }
+
+    }
