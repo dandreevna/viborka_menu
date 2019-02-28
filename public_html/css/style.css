@@ -59,6 +59,7 @@
 
     .main_wrapper {
         max-width: 100%;
+        min-width: 650px;
         margin: 0px auto;
         background: #fff;
         background: #F1F0EE;
@@ -152,7 +153,8 @@
     }
 
     .logo{
-        width: 100%;
+        max-width: 100%;
+        min-width: 650px;
         background-image: url("/img/logo.png");
         height: 100px;
     }
@@ -374,10 +376,6 @@
         #dashboard a{
             display: inline;
             font-size: 21px;
-        }
-
-        .main_wrapper {
-            max-width: 700px;
         }
 
     }
